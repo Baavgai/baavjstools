@@ -1,0 +1,8 @@
+{
+  "eslint.enable": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "deno.enable": true,
+  "deno.lint": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}
