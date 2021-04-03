@@ -4,5 +4,5 @@
   "editor.detectIndentation": false,
   "deno.enable": true,
   "deno.lint": true,
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
