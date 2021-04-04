@@ -1,3 +1,17 @@
+export const combinations = domain => {
+  let q = [[[], domain]];
+  for (let i = 0; i < domain.length; i++) {
+    q = q.reduce((acc, [h, t]) =>
+      t.length === 0
+        ? [...acc, [h, t]]
+        : [...acc, [[...h, t[0]], t.slice(1)], [h, t.slice(1)]
+        ], []);
+  }
+  return q.map(([xs, _]) => xs).filter(xs => xs.length !== 0);
+};
+
+
+/*
 export const combinations = xs => {
     const found = [];
     function loop(acc, i) {
@@ -11,3 +25,4 @@ export const combinations = xs => {
     loop([],0);
     return found.filter(x => x.length!==0);
 };
+*/
